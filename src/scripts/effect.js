@@ -146,7 +146,8 @@ $('document').ready(function(){
 		$('#self').css({"display": "block", "bottom":'0px',"left":vw+'px'});
 		$('#self').animate({top:mid-mid_diff*4,left:vw},3000);
 
-		$('#f1').css({"display": "block", "top":500*Math.random()+'px',"left":'0px'});
+		$('#f1').css({"display": "block", "width": "90px",
+  "height": "90px","top":500*Math.random()+'px',"left":'0px'});
 		$('#f1').animate({top:mid-mid_diff*3,left:vw-vw_diff*3},3000);
 
 
@@ -163,7 +164,8 @@ $('document').ready(function(){
 		$('#f5').css({"display": "block", "top":500*Math.random()+'px',"right":'0px'});
 		$('#f5').animate({top:mid-mid_diff,left:vw+vw_diff*5},3000);
 
-		$('#f6').css({"display": "block", "top":500*Math.random()+'px',"right":'0px'});
+		$('#f6').css({"display": "block", "width": "70px",
+  "height": "70px","top":500*Math.random()+'px',"right":'0px'});
 		$('#f6').animate({top:mid-mid_diff,left:vw-vw_diff*5},3000);
 
 		$('#f7').css({"display": "block", "top":500*Math.random()+'px',"right":'0px'});
@@ -174,19 +176,10 @@ $('document').ready(function(){
 		$('#f8').animate({top:mid,left:vw+vw_diff*6},3000);
 
 
-		$('#f9').css({"display": "block", "top":500*Math.random()+'px',"left":'0px'});
-		$('#f9').animate({top:mid+mid_diff*3,left:vw+vw_diff*2},3000);
+		
 
 		$('#f10').css({"display": "block", "top":500*Math.random()+'px',"right":'0px'});
 		$('#f10').animate({top:mid+mid_diff,left:vw-vw_diff*7},3000);
-
-
-		$('#f11').css({"display": "block", "top":500*Math.random()+'px',"right":'0px'});
-		$('#f11').animate({top:mid+mid_diff,left:vw+vw_diff*7},3000);
-
-
-		$('#f12').css({"display": "block", "top":500*Math.random()+'px',"left":'0px'});
-		$('#f12').animate({top:mid+mid_diff*3,left:vw-vw_diff*4},3000);
 
 
 		$(this).fadeOut('slow').delay(5000).promise().done(function(){
@@ -222,10 +215,8 @@ $('document').ready(function(){
 		$('#f6').addClass('dance-one')
 		$('#f7').addClass('dance-two')
 		$('#f8').addClass('dance-two')
-		$('#f11').addClass('dance-two')
-		 $('#f12').addClass('dance-two')
 		$('#self').addClass('dance-one')
-		 $('#f9').addClass('dance-one')
+		
 		$('#f10').addClass('dance-one')
 		
 		$('#bulb_yellow').addClass('bulb-glow-yellow-disco');
